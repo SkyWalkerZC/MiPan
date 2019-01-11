@@ -73,7 +73,6 @@
 		2BF6361A21E8408000D78D3C /* MiPanSky */ = {
 			isa = PBXGroup;
 			children = (
-				2BF6364321E85FB700D78D3C /* Resource */,
 				2BF6362721E8408200D78D3C /* Info.plist */,
 				2BF6361B21E8408000D78D3C /* AppDelegate.swift */,
 				2BF6361F21E8408000D78D3C /* Main.storyboard */,
@@ -82,6 +81,7 @@
 				2BF6362E21E85AFA00D78D3C /* M */,
 				2BF6362F21E85B0300D78D3C /* V */,
 				2BF6363021E85B0C00D78D3C /* C */,
+				2BF6364321E85FB700D78D3C /* Resource */,
 			);
 			path = MiPanSky;
 			sourceTree = "<group>";
