@@ -19,14 +19,14 @@ class DrawLine: UIView {
     
     override init(frame: CGRect) {
         currentPaintColor = UIColor.black
-        currentPaintWidth = 1.0
+        currentPaintWidth = 7.0
         super.init(frame: frame)
         self.backgroundColor = paperColor
     }
     
     required init?(coder aDecoder: NSCoder) {
         currentPaintColor = UIColor.black
-        currentPaintWidth = 1.0
+        currentPaintWidth = 7.0
         super.init(coder: aDecoder)
         self.backgroundColor = paperColor
     }
