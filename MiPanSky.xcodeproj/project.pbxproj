@@ -22,6 +22,9 @@
 		2BF6364121E85FB100D78D3C /* SymmetryRotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6363F21E85FB100D78D3C /* SymmetryRotationViewController.swift */; };
 		2BF6364221E85FB100D78D3C /* SymmetryRotationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BF6364021E85FB100D78D3C /* SymmetryRotationViewController.xib */; };
 		2BF6364621E8617600D78D3C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6364421E8617600D78D3C /* BaseViewController.swift */; };
+		2BF6364921E877FD00D78D3C /* DrawLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6364821E877FD00D78D3C /* DrawLine.swift */; };
+		2BF6364C21E8789A00D78D3C /* DrawLineInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6364B21E8789A00D78D3C /* DrawLineInfo.swift */; };
+		2BF6364E21E886FD00D78D3C /* FreedomDrawLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6364D21E886FD00D78D3C /* FreedomDrawLine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 		2BF6363F21E85FB100D78D3C /* SymmetryRotationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymmetryRotationViewController.swift; sourceTree = "<group>"; };
 		2BF6364021E85FB100D78D3C /* SymmetryRotationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SymmetryRotationViewController.xib; sourceTree = "<group>"; };
 		2BF6364421E8617600D78D3C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2BF6364821E877FD00D78D3C /* DrawLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawLine.swift; sourceTree = "<group>"; };
+		2BF6364B21E8789A00D78D3C /* DrawLineInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawLineInfo.swift; sourceTree = "<group>"; };
+		2BF6364D21E886FD00D78D3C /* FreedomDrawLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreedomDrawLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 				2BF6362F21E85B0300D78D3C /* V */,
 				2BF6363021E85B0C00D78D3C /* C */,
 				2BF6364321E85FB700D78D3C /* Resource */,
+				2BF6364A21E8781400D78D3C /* Other */,
 			);
 			path = MiPanSky;
 			sourceTree = "<group>";
@@ -89,6 +96,7 @@
 		2BF6362E21E85AFA00D78D3C /* M */ = {
 			isa = PBXGroup;
 			children = (
+				2BF6364B21E8789A00D78D3C /* DrawLineInfo.swift */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -96,6 +104,8 @@
 		2BF6362F21E85B0300D78D3C /* V */ = {
 			isa = PBXGroup;
 			children = (
+				2BF6364821E877FD00D78D3C /* DrawLine.swift */,
+				2BF6364D21E886FD00D78D3C /* FreedomDrawLine.swift */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -122,6 +132,13 @@
 				2BF6364021E85FB100D78D3C /* SymmetryRotationViewController.xib */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		2BF6364A21E8781400D78D3C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,11 +219,14 @@
 			files = (
 				2BF6364121E85FB100D78D3C /* SymmetryRotationViewController.swift in Sources */,
 				2BF6363921E85F8400D78D3C /* LeftAndRightSymmetryViewController.swift in Sources */,
+				2BF6364E21E886FD00D78D3C /* FreedomDrawLine.swift in Sources */,
 				2BF6361E21E8408000D78D3C /* ViewController.swift in Sources */,
+				2BF6364C21E8789A00D78D3C /* DrawLineInfo.swift in Sources */,
 				2BF6363521E85F6100D78D3C /* FreedomModuleViewController.swift in Sources */,
 				2BF6361C21E8408000D78D3C /* AppDelegate.swift in Sources */,
 				2BF6364621E8617600D78D3C /* BaseViewController.swift in Sources */,
 				2BF6363D21E85F9700D78D3C /* CenterSymmetryViewController.swift in Sources */,
+				2BF6364921E877FD00D78D3C /* DrawLine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

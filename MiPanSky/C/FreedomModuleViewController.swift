@@ -9,11 +9,18 @@
 import UIKit
 
 class FreedomModuleViewController: BaseViewController {
+    
+    var freedomView:FreedomDrawLine?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setDrawPaper()
+    }
+    
+    func setDrawPaper() {
+        freedomView = FreedomDrawLine(frame: self.view.bounds)
+        self.view.addSubview(freedomView!)
+        self.view.sendSubviewToBack(freedomView!)
     }
 
 
