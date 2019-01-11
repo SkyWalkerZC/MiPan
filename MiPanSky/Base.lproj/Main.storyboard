@@ -1,24 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jiL-eq-7XG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--迷盘-->
+        <scene sceneID="NNP-gG-Rzv">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <navigationController title="迷盘" id="jiL-eq-7XG" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FHu-N3-Aev">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jeU-s3-lK9" kind="relationship" relationship="rootViewController" id="nBR-vN-DCy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aua-Qu-kjR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-665" y="118"/>
+        </scene>
+        <!--迷盘-->
+        <scene sceneID="GCZ-Zh-iIa">
+            <objects>
+                <viewController id="jeU-s3-lK9" customClass="ViewController" customModule="MiPanSky" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VfM-Lj-1bD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Psv-n6-Zzg" userLabel="FreedomImageView">
+                                <rect key="frame" x="40" y="95" width="120" height="120"/>
+                                <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Psv-n6-Zzg" secondAttribute="height" multiplier="1:1" id="cHf-f1-Jrn"/>
+                                    <constraint firstAttribute="height" constant="120" id="qmv-2x-f9l"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="gtI-Rq-lFa" appends="YES" id="Rj5-xs-oRs"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m8b-S9-qiq" userLabel="LeftAndRightImageView">
+                                <rect key="frame" x="214" y="95" width="120" height="120"/>
+                                <color key="backgroundColor" red="1" green="0.37108059980000002" blue="0.42384659190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="0th-N5-tku"/>
+                                    <constraint firstAttribute="width" secondItem="m8b-S9-qiq" secondAttribute="height" multiplier="1:1" id="6rz-3N-aGy"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="dnA-rp-38U" appends="YES" id="exa-Td-Q8C"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自由模式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckh-ya-zeP">
+                                <rect key="frame" x="71.5" y="223" width="57.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Noh-gH-NKE" userLabel="CenterSymmetry">
+                                <rect key="frame" x="40" y="248" width="120" height="120"/>
+                                <color key="backgroundColor" red="0.1689686319" green="0.87058922299999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="8LL-Jf-tDN"/>
+                                    <constraint firstAttribute="width" secondItem="Noh-gH-NKE" secondAttribute="height" multiplier="1:1" id="g3w-Bg-J8K"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="f1e-xZ-qUv" appends="YES" id="9U0-8s-dYP"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VYc-qO-KC3" userLabel="SymmetryRotation">
+                                <rect key="frame" x="214" y="248" width="120" height="120"/>
+                                <color key="backgroundColor" red="0.76718069529999999" green="1" blue="0.74731727839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VYc-qO-KC3" secondAttribute="height" multiplier="1:1" id="ApV-2e-9ly"/>
+                                    <constraint firstAttribute="height" constant="120" id="sRX-hU-WCT"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="4EO-xM-0OF" appends="YES" id="Ne5-6X-F3o"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中心对称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkC-uH-dC9">
+                                <rect key="frame" x="71.5" y="376" width="57.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="对称旋转" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84y-qJ-JYr">
+                                <rect key="frame" x="245.5" y="376" width="57.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="左右对称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpi-yR-PI0">
+                                <rect key="frame" x="245.5" y="223" width="57.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="3DK-he-XyI" firstAttribute="trailing" secondItem="VYc-qO-KC3" secondAttribute="trailing" constant="41" id="0bU-4l-vuu"/>
+                            <constraint firstItem="m8b-S9-qiq" firstAttribute="top" secondItem="Psv-n6-Zzg" secondAttribute="top" id="2Ve-e4-M5q"/>
+                            <constraint firstItem="84y-qJ-JYr" firstAttribute="centerX" secondItem="m8b-S9-qiq" secondAttribute="centerX" id="5Mm-do-Fxn"/>
+                            <constraint firstItem="m8b-S9-qiq" firstAttribute="height" secondItem="Psv-n6-Zzg" secondAttribute="height" id="7E5-FO-ukh"/>
+                            <constraint firstItem="VYc-qO-KC3" firstAttribute="top" secondItem="Noh-gH-NKE" secondAttribute="top" id="82I-Fs-k03"/>
+                            <constraint firstItem="VYc-qO-KC3" firstAttribute="leading" secondItem="Noh-gH-NKE" secondAttribute="trailing" constant="54" id="ChQ-xr-dGT"/>
+                            <constraint firstItem="Noh-gH-NKE" firstAttribute="leading" secondItem="3DK-he-XyI" secondAttribute="leading" constant="40" id="EBV-l6-j7Z"/>
+                            <constraint firstItem="VYc-qO-KC3" firstAttribute="width" secondItem="VYc-qO-KC3" secondAttribute="height" multiplier="1:1" id="EXD-dj-m95"/>
+                            <constraint firstItem="84y-qJ-JYr" firstAttribute="top" secondItem="VYc-qO-KC3" secondAttribute="bottom" constant="8" id="EZ3-Lm-LHJ"/>
+                            <constraint firstItem="Noh-gH-NKE" firstAttribute="width" secondItem="Noh-gH-NKE" secondAttribute="height" multiplier="1:1" id="G5d-eH-SE0"/>
+                            <constraint firstItem="m8b-S9-qiq" firstAttribute="leading" secondItem="Psv-n6-Zzg" secondAttribute="trailing" constant="54" id="O9d-J2-tZo"/>
+                            <constraint firstItem="VYc-qO-KC3" firstAttribute="top" secondItem="cpi-yR-PI0" secondAttribute="bottom" constant="8" id="TD4-VJ-b1x"/>
+                            <constraint firstItem="m8b-S9-qiq" firstAttribute="top" secondItem="3DK-he-XyI" secondAttribute="top" constant="31" id="Xn1-qE-DM0"/>
+                            <constraint firstItem="ckh-ya-zeP" firstAttribute="centerX" secondItem="Psv-n6-Zzg" secondAttribute="centerX" id="Zvu-Kl-zYB"/>
+                            <constraint firstItem="Psv-n6-Zzg" firstAttribute="top" secondItem="3DK-he-XyI" secondAttribute="top" constant="31" id="bXB-aI-T9z"/>
+                            <constraint firstItem="cpi-yR-PI0" firstAttribute="top" secondItem="m8b-S9-qiq" secondAttribute="bottom" constant="8" id="cKY-PV-wSi"/>
+                            <constraint firstItem="VYc-qO-KC3" firstAttribute="width" secondItem="VYc-qO-KC3" secondAttribute="height" multiplier="1:1" id="cvV-Mp-xX8"/>
+                            <constraint firstItem="3DK-he-XyI" firstAttribute="trailing" secondItem="m8b-S9-qiq" secondAttribute="trailing" constant="41" id="ekO-PO-55X"/>
+                            <constraint firstItem="kkC-uH-dC9" firstAttribute="top" secondItem="Noh-gH-NKE" secondAttribute="bottom" constant="8" id="l3l-TV-pJg"/>
+                            <constraint firstItem="ckh-ya-zeP" firstAttribute="top" secondItem="Psv-n6-Zzg" secondAttribute="bottom" constant="8" id="oWy-so-YvO"/>
+                            <constraint firstItem="m8b-S9-qiq" firstAttribute="width" secondItem="Psv-n6-Zzg" secondAttribute="width" id="qCA-Ly-6iq"/>
+                            <constraint firstItem="cpi-yR-PI0" firstAttribute="centerX" secondItem="m8b-S9-qiq" secondAttribute="centerX" id="ump-eY-Zm5"/>
+                            <constraint firstItem="VYc-qO-KC3" firstAttribute="centerX" secondItem="m8b-S9-qiq" secondAttribute="centerX" id="v7g-Zx-qyq"/>
+                            <constraint firstItem="Noh-gH-NKE" firstAttribute="top" secondItem="ckh-ya-zeP" secondAttribute="bottom" constant="8" id="w7P-HD-bhq"/>
+                            <constraint firstItem="Noh-gH-NKE" firstAttribute="centerX" secondItem="Psv-n6-Zzg" secondAttribute="centerX" id="w8u-6O-9Ax"/>
+                            <constraint firstItem="Psv-n6-Zzg" firstAttribute="leading" secondItem="3DK-he-XyI" secondAttribute="leading" constant="40" id="xx7-A8-oeB"/>
+                            <constraint firstItem="kkC-uH-dC9" firstAttribute="centerX" secondItem="Psv-n6-Zzg" secondAttribute="centerX" id="yTc-d3-KY6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3DK-he-XyI"/>
                     </view>
+                    <navigationItem key="navigationItem" title="迷盘" id="2Jk-RN-v5T"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yLZ-hC-bu6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="gtI-Rq-lFa" userLabel="FreedomTap">
+                    <connections>
+                        <action selector="freedomTap:" destination="jeU-s3-lK9" id="tMq-YZ-JbV"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="dnA-rp-38U" userLabel="leftAndRight">
+                    <connections>
+                        <action selector="leftAndRightTap:" destination="jeU-s3-lK9" id="gLA-T3-NFa"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="f1e-xZ-qUv" userLabel="CenterSymmetry">
+                    <connections>
+                        <action selector="centerSymmetryTap:" destination="jeU-s3-lK9" id="wvW-TW-Kgq"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="4EO-xM-0OF" userLabel="SymmetryRotation">
+                    <connections>
+                        <action selector="symmetryRotationTap:" destination="jeU-s3-lK9" id="wBl-tN-Ncw"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="60" y="104"/>
         </scene>
     </scenes>
 </document>

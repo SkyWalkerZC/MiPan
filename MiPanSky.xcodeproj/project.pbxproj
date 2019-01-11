@@ -11,7 +11,17 @@
 		2BF6361E21E8408000D78D3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6361D21E8408000D78D3C /* ViewController.swift */; };
 		2BF6362121E8408000D78D3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF6361F21E8408000D78D3C /* Main.storyboard */; };
 		2BF6362321E8408200D78D3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BF6362221E8408200D78D3C /* Assets.xcassets */; };
-		2BF6362621E8408200D78D3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF6362421E8408200D78D3C /* LaunchScreen.storyboard */; };
+		2BF6363121E85C5B00D78D3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BF6362721E8408200D78D3C /* Info.plist */; };
+		2BF6363221E85C6400D78D3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF6362421E8408200D78D3C /* LaunchScreen.storyboard */; };
+		2BF6363521E85F6100D78D3C /* FreedomModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6363321E85F6100D78D3C /* FreedomModuleViewController.swift */; };
+		2BF6363621E85F6100D78D3C /* FreedomModuleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BF6363421E85F6100D78D3C /* FreedomModuleViewController.xib */; };
+		2BF6363921E85F8400D78D3C /* LeftAndRightSymmetryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6363721E85F8400D78D3C /* LeftAndRightSymmetryViewController.swift */; };
+		2BF6363A21E85F8400D78D3C /* LeftAndRightSymmetryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BF6363821E85F8400D78D3C /* LeftAndRightSymmetryViewController.xib */; };
+		2BF6363D21E85F9700D78D3C /* CenterSymmetryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6363B21E85F9700D78D3C /* CenterSymmetryViewController.swift */; };
+		2BF6363E21E85F9700D78D3C /* CenterSymmetryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BF6363C21E85F9700D78D3C /* CenterSymmetryViewController.xib */; };
+		2BF6364121E85FB100D78D3C /* SymmetryRotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6363F21E85FB100D78D3C /* SymmetryRotationViewController.swift */; };
+		2BF6364221E85FB100D78D3C /* SymmetryRotationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BF6364021E85FB100D78D3C /* SymmetryRotationViewController.xib */; };
+		2BF6364621E8617600D78D3C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6364421E8617600D78D3C /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,15 @@
 		2BF6362221E8408200D78D3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BF6362521E8408200D78D3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BF6362721E8408200D78D3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BF6363321E85F6100D78D3C /* FreedomModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreedomModuleViewController.swift; sourceTree = "<group>"; };
+		2BF6363421E85F6100D78D3C /* FreedomModuleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FreedomModuleViewController.xib; sourceTree = "<group>"; };
+		2BF6363721E85F8400D78D3C /* LeftAndRightSymmetryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAndRightSymmetryViewController.swift; sourceTree = "<group>"; };
+		2BF6363821E85F8400D78D3C /* LeftAndRightSymmetryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftAndRightSymmetryViewController.xib; sourceTree = "<group>"; };
+		2BF6363B21E85F9700D78D3C /* CenterSymmetryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterSymmetryViewController.swift; sourceTree = "<group>"; };
+		2BF6363C21E85F9700D78D3C /* CenterSymmetryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CenterSymmetryViewController.xib; sourceTree = "<group>"; };
+		2BF6363F21E85FB100D78D3C /* SymmetryRotationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymmetryRotationViewController.swift; sourceTree = "<group>"; };
+		2BF6364021E85FB100D78D3C /* SymmetryRotationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SymmetryRotationViewController.xib; sourceTree = "<group>"; };
+		2BF6364421E8617600D78D3C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +73,55 @@
 		2BF6361A21E8408000D78D3C /* MiPanSky */ = {
 			isa = PBXGroup;
 			children = (
+				2BF6364321E85FB700D78D3C /* Resource */,
+				2BF6362721E8408200D78D3C /* Info.plist */,
 				2BF6361B21E8408000D78D3C /* AppDelegate.swift */,
-				2BF6361D21E8408000D78D3C /* ViewController.swift */,
 				2BF6361F21E8408000D78D3C /* Main.storyboard */,
 				2BF6362221E8408200D78D3C /* Assets.xcassets */,
 				2BF6362421E8408200D78D3C /* LaunchScreen.storyboard */,
-				2BF6362721E8408200D78D3C /* Info.plist */,
+				2BF6362E21E85AFA00D78D3C /* M */,
+				2BF6362F21E85B0300D78D3C /* V */,
+				2BF6363021E85B0C00D78D3C /* C */,
 			);
 			path = MiPanSky;
+			sourceTree = "<group>";
+		};
+		2BF6362E21E85AFA00D78D3C /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		2BF6362F21E85B0300D78D3C /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		2BF6363021E85B0C00D78D3C /* C */ = {
+			isa = PBXGroup;
+			children = (
+				2BF6361D21E8408000D78D3C /* ViewController.swift */,
+				2BF6363321E85F6100D78D3C /* FreedomModuleViewController.swift */,
+				2BF6363721E85F8400D78D3C /* LeftAndRightSymmetryViewController.swift */,
+				2BF6363B21E85F9700D78D3C /* CenterSymmetryViewController.swift */,
+				2BF6363F21E85FB100D78D3C /* SymmetryRotationViewController.swift */,
+				2BF6364421E8617600D78D3C /* BaseViewController.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		2BF6364321E85FB700D78D3C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2BF6363421E85F6100D78D3C /* FreedomModuleViewController.xib */,
+				2BF6363821E85F8400D78D3C /* LeftAndRightSymmetryViewController.xib */,
+				2BF6363C21E85F9700D78D3C /* CenterSymmetryViewController.xib */,
+				2BF6364021E85FB100D78D3C /* SymmetryRotationViewController.xib */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +182,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BF6362621E8408200D78D3C /* LaunchScreen.storyboard in Resources */,
+				2BF6363A21E85F8400D78D3C /* LeftAndRightSymmetryViewController.xib in Resources */,
+				2BF6363221E85C6400D78D3C /* LaunchScreen.storyboard in Resources */,
+				2BF6363621E85F6100D78D3C /* FreedomModuleViewController.xib in Resources */,
+				2BF6363121E85C5B00D78D3C /* Info.plist in Resources */,
+				2BF6364221E85FB100D78D3C /* SymmetryRotationViewController.xib in Resources */,
 				2BF6362321E8408200D78D3C /* Assets.xcassets in Resources */,
 				2BF6362121E8408000D78D3C /* Main.storyboard in Resources */,
+				2BF6363E21E85F9700D78D3C /* CenterSymmetryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +200,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BF6364121E85FB100D78D3C /* SymmetryRotationViewController.swift in Sources */,
+				2BF6363921E85F8400D78D3C /* LeftAndRightSymmetryViewController.swift in Sources */,
 				2BF6361E21E8408000D78D3C /* ViewController.swift in Sources */,
+				2BF6363521E85F6100D78D3C /* FreedomModuleViewController.swift in Sources */,
 				2BF6361C21E8408000D78D3C /* AppDelegate.swift in Sources */,
+				2BF6364621E8617600D78D3C /* BaseViewController.swift in Sources */,
+				2BF6363D21E85F9700D78D3C /* CenterSymmetryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +355,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8F3KT864KL;
 				INFOPLIST_FILE = MiPanSky/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +374,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8F3KT864KL;
 				INFOPLIST_FILE = MiPanSky/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
