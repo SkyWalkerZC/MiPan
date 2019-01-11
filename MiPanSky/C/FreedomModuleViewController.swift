@@ -18,7 +18,7 @@ class FreedomModuleViewController: BaseViewController {
     }
     
     func setDrawPaper() {
-        freedomView = FreedomDrawLine(frame: self.view.bounds)
+        freedomView = FreedomDrawLine(frame: UIScreen.main.bounds)
         self.view.addSubview(freedomView!)
         self.view.sendSubviewToBack(freedomView!)
     }

@@ -14,7 +14,6 @@
 		2BF6363121E85C5B00D78D3C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BF6362721E8408200D78D3C /* Info.plist */; };
 		2BF6363221E85C6400D78D3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF6362421E8408200D78D3C /* LaunchScreen.storyboard */; };
 		2BF6363521E85F6100D78D3C /* FreedomModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6363321E85F6100D78D3C /* FreedomModuleViewController.swift */; };
-		2BF6363621E85F6100D78D3C /* FreedomModuleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BF6363421E85F6100D78D3C /* FreedomModuleViewController.xib */; };
 		2BF6363921E85F8400D78D3C /* LeftAndRightSymmetryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6363721E85F8400D78D3C /* LeftAndRightSymmetryViewController.swift */; };
 		2BF6363A21E85F8400D78D3C /* LeftAndRightSymmetryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BF6363821E85F8400D78D3C /* LeftAndRightSymmetryViewController.xib */; };
 		2BF6363D21E85F9700D78D3C /* CenterSymmetryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6363B21E85F9700D78D3C /* CenterSymmetryViewController.swift */; };
@@ -25,6 +24,7 @@
 		2BF6364921E877FD00D78D3C /* DrawLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6364821E877FD00D78D3C /* DrawLine.swift */; };
 		2BF6364C21E8789A00D78D3C /* DrawLineInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6364B21E8789A00D78D3C /* DrawLineInfo.swift */; };
 		2BF6364E21E886FD00D78D3C /* FreedomDrawLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6364D21E886FD00D78D3C /* FreedomDrawLine.swift */; };
+		2BF6365021E89C7300D78D3C /* FreedomModuleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BF6364F21E89C7300D78D3C /* FreedomModuleViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +36,6 @@
 		2BF6362521E8408200D78D3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BF6362721E8408200D78D3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BF6363321E85F6100D78D3C /* FreedomModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreedomModuleViewController.swift; sourceTree = "<group>"; };
-		2BF6363421E85F6100D78D3C /* FreedomModuleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FreedomModuleViewController.xib; sourceTree = "<group>"; };
 		2BF6363721E85F8400D78D3C /* LeftAndRightSymmetryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAndRightSymmetryViewController.swift; sourceTree = "<group>"; };
 		2BF6363821E85F8400D78D3C /* LeftAndRightSymmetryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftAndRightSymmetryViewController.xib; sourceTree = "<group>"; };
 		2BF6363B21E85F9700D78D3C /* CenterSymmetryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterSymmetryViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		2BF6364821E877FD00D78D3C /* DrawLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawLine.swift; sourceTree = "<group>"; };
 		2BF6364B21E8789A00D78D3C /* DrawLineInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawLineInfo.swift; sourceTree = "<group>"; };
 		2BF6364D21E886FD00D78D3C /* FreedomDrawLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreedomDrawLine.swift; sourceTree = "<group>"; };
+		2BF6364F21E89C7300D78D3C /* FreedomModuleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreedomModuleViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +126,7 @@
 		2BF6364321E85FB700D78D3C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				2BF6363421E85F6100D78D3C /* FreedomModuleViewController.xib */,
+				2BF6364F21E89C7300D78D3C /* FreedomModuleViewController.xib */,
 				2BF6363821E85F8400D78D3C /* LeftAndRightSymmetryViewController.xib */,
 				2BF6363C21E85F9700D78D3C /* CenterSymmetryViewController.xib */,
 				2BF6364021E85FB100D78D3C /* SymmetryRotationViewController.xib */,
@@ -201,12 +201,12 @@
 			files = (
 				2BF6363A21E85F8400D78D3C /* LeftAndRightSymmetryViewController.xib in Resources */,
 				2BF6363221E85C6400D78D3C /* LaunchScreen.storyboard in Resources */,
-				2BF6363621E85F6100D78D3C /* FreedomModuleViewController.xib in Resources */,
 				2BF6363121E85C5B00D78D3C /* Info.plist in Resources */,
 				2BF6364221E85FB100D78D3C /* SymmetryRotationViewController.xib in Resources */,
 				2BF6362321E8408200D78D3C /* Assets.xcassets in Resources */,
 				2BF6362121E8408000D78D3C /* Main.storyboard in Resources */,
 				2BF6363E21E85F9700D78D3C /* CenterSymmetryViewController.xib in Resources */,
+				2BF6365021E89C7300D78D3C /* FreedomModuleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
