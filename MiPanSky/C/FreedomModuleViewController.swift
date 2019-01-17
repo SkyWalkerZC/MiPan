@@ -22,6 +22,14 @@ class FreedomModuleViewController: BaseViewController {
         self.view.addSubview(freedomView!)
         self.view.sendSubviewToBack(freedomView!)
     }
+    
+    override func revocation() {
+        freedomView?.cleanFinallyDraw()
+    }
+    
+    override func cleanAll() {
+        freedomView?.cleanAllDraw()
+    }
 
 
     /*

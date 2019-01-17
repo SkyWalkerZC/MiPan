@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B7DD0ED21F05E1D0044A5EA /* MPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7DD0EC21F05E1D0044A5EA /* MPHeader.swift */; };
 		2BF6361C21E8408000D78D3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6361B21E8408000D78D3C /* AppDelegate.swift */; };
 		2BF6361E21E8408000D78D3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6361D21E8408000D78D3C /* ViewController.swift */; };
 		2BF6362121E8408000D78D3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF6361F21E8408000D78D3C /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B7DD0EC21F05E1D0044A5EA /* MPHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPHeader.swift; sourceTree = "<group>"; };
 		2BF6361821E8408000D78D3C /* MiPanSky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiPanSky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BF6361B21E8408000D78D3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BF6361D21E8408000D78D3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 		2BF6364A21E8781400D78D3C /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				2B7DD0EC21F05E1D0044A5EA /* MPHeader.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				2BF6364621E8617600D78D3C /* BaseViewController.swift in Sources */,
 				2BF6363D21E85F9700D78D3C /* CenterSymmetryViewController.swift in Sources */,
 				2BF6364921E877FD00D78D3C /* DrawLine.swift in Sources */,
+				2B7DD0ED21F05E1D0044A5EA /* MPHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -28,15 +28,21 @@ class DrawLine: UIView {
         currentPaintColor = UIColor.black
         currentPaintWidth = 7.0
         super.init(coder: aDecoder)
-        self.backgroundColor = paperColor
+        backgroundColor = paperColor
     }
     
     func cleanAllDraw() {
-        
+        if allLineInfos.count > 0 {
+            allLineInfos.removeAll()
+            setNeedsDisplay()
+        }
     }
     
     func cleanFinallyDraw() {
-        
+        if allLineInfos.count > 0 {
+            allLineInfos.removeLast()
+            setNeedsDisplay()
+        }
     }
     
     
