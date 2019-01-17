@@ -26,24 +26,20 @@ class ViewController: UIViewController {
     
     
     @IBAction func freedomTap(_ sender: UITapGestureRecognizer) {
-        print("click freedom")
         let freedomVC = FreedomModuleViewController()
         self.navigationController?.pushViewController(freedomVC, animated: true)
     }
     @IBAction func leftAndRightTap(_ sender: Any) {
-        print("click left and right")
         let lARVC = LeftAndRightSymmetryViewController()
         self.navigationController?.pushViewController(lARVC, animated: true)
         
     }
     @IBAction func centerSymmetryTap(_ sender: Any) {
-        print("click center symmetry")
         let centerSymmetryVC = CenterSymmetryViewController()
         self.navigationController?.pushViewController(centerSymmetryVC, animated: true)
         
     }
     @IBAction func symmetryRotationTap(_ sender: Any) {
-        print("click symmetry rotation")
         let symmetryRVC = SymmetryRotationViewController()
         self.navigationController?.pushViewController(symmetryRVC, animated: true)
         
