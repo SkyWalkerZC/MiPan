@@ -25,6 +25,11 @@ class ViewController: UIViewController {
     }
     
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let lsyView = LysViewController()
+        self.navigationController?.pushViewController(lsyView, animated: true)
+    }
+    
     @IBAction func freedomTap(_ sender: UITapGestureRecognizer) {
         let freedomVC = FreedomModuleViewController()
         self.navigationController?.pushViewController(freedomVC, animated: true)
