@@ -27,6 +27,7 @@
 		2BF6364E21E886FD00D78D3C /* FreedomDrawLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6364D21E886FD00D78D3C /* FreedomDrawLine.swift */; };
 		2BF6365021E89C7300D78D3C /* FreedomModuleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BF6364F21E89C7300D78D3C /* FreedomModuleViewController.xib */; };
 		B1313C3E21F56E380080D178 /* LysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1313C3D21F56E380080D178 /* LysViewController.swift */; };
+		B1313C4021F59ED90080D178 /* LysDemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1313C3F21F59ED90080D178 /* LysDemoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		2BF6364D21E886FD00D78D3C /* FreedomDrawLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreedomDrawLine.swift; sourceTree = "<group>"; };
 		2BF6364F21E89C7300D78D3C /* FreedomModuleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreedomModuleViewController.xib; sourceTree = "<group>"; };
 		B1313C3D21F56E380080D178 /* LysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LysViewController.swift; sourceTree = "<group>"; };
+		B1313C3F21F59ED90080D178 /* LysDemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LysDemoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			children = (
 				2BF6364821E877FD00D78D3C /* DrawLine.swift */,
 				2BF6364D21E886FD00D78D3C /* FreedomDrawLine.swift */,
+				B1313C3F21F59ED90080D178 /* LysDemoCell.swift */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				2BF6361E21E8408000D78D3C /* ViewController.swift in Sources */,
 				2BF6364C21E8789A00D78D3C /* DrawLineInfo.swift in Sources */,
 				2BF6363521E85F6100D78D3C /* FreedomModuleViewController.swift in Sources */,
+				B1313C4021F59ED90080D178 /* LysDemoCell.swift in Sources */,
 				2BF6361C21E8408000D78D3C /* AppDelegate.swift in Sources */,
 				2BF6364621E8617600D78D3C /* BaseViewController.swift in Sources */,
 				2BF6363D21E85F9700D78D3C /* CenterSymmetryViewController.swift in Sources */,

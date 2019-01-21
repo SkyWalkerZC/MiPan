@@ -7,24 +7,51 @@
 //
 
 import UIKit
-
-class LysViewController: UIViewController {
+class LysViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.view.backgroundColor = 
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = .white;
+        self.title = "Demo"
+
+        creatTab()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func creatTab() {
+        let tableView = UITableView(frame: view.bounds, style: .plain)
+        tableView.backgroundColor = UIColor.white
+        view.addSubview(tableView)
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.showsHorizontalScrollIndicator = false
+        tableView.showsVerticalScrollIndicator = false
+        tableView.tableFooterView = UIView(frame: CGRect(x:0,y:0,width:0,height:0))
     }
-    */
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 14
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellId = "DemoList"
+        var cell:LysDemoCell? = tableView.dequeueReusableCell(withIdentifier: cellId) as?LysDemoCell
+        if cell == nil {
+            cell = LysDemoCell(style: .`default`, reuseIdentifier: cellId)
+        }
+        let indexs = indexPath.row + 1
+        cell?.textLab.text = String("第\(indexs)行")
+        return cell!
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    
 
 }
