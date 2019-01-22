@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2B7DD0ED21F05E1D0044A5EA /* MPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7DD0EC21F05E1D0044A5EA /* MPHeader.swift */; };
+		2BB1220221F6EB580057B207 /* LeftAndRightSymmetryLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1220121F6EB580057B207 /* LeftAndRightSymmetryLine.swift */; };
+		2BB1220421F6EFB70057B207 /* CenterSymmetryLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1220321F6EFB70057B207 /* CenterSymmetryLine.swift */; };
+		2BB1220621F6F00F0057B207 /* SymmetryRotationLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1220521F6F00F0057B207 /* SymmetryRotationLine.swift */; };
 		2BF6361C21E8408000D78D3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6361B21E8408000D78D3C /* AppDelegate.swift */; };
 		2BF6361E21E8408000D78D3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6361D21E8408000D78D3C /* ViewController.swift */; };
 		2BF6362121E8408000D78D3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BF6361F21E8408000D78D3C /* Main.storyboard */; };
@@ -30,6 +33,9 @@
 
 /* Begin PBXFileReference section */
 		2B7DD0EC21F05E1D0044A5EA /* MPHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPHeader.swift; sourceTree = "<group>"; };
+		2BB1220121F6EB580057B207 /* LeftAndRightSymmetryLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAndRightSymmetryLine.swift; sourceTree = "<group>"; };
+		2BB1220321F6EFB70057B207 /* CenterSymmetryLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterSymmetryLine.swift; sourceTree = "<group>"; };
+		2BB1220521F6F00F0057B207 /* SymmetryRotationLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymmetryRotationLine.swift; sourceTree = "<group>"; };
 		2BF6361821E8408000D78D3C /* MiPanSky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiPanSky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BF6361B21E8408000D78D3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BF6361D21E8408000D78D3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +114,9 @@
 			children = (
 				2BF6364821E877FD00D78D3C /* DrawLine.swift */,
 				2BF6364D21E886FD00D78D3C /* FreedomDrawLine.swift */,
+				2BB1220121F6EB580057B207 /* LeftAndRightSymmetryLine.swift */,
+				2BB1220321F6EFB70057B207 /* CenterSymmetryLine.swift */,
+				2BB1220521F6F00F0057B207 /* SymmetryRotationLine.swift */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -228,9 +237,12 @@
 				2BF6363521E85F6100D78D3C /* FreedomModuleViewController.swift in Sources */,
 				2BF6361C21E8408000D78D3C /* AppDelegate.swift in Sources */,
 				2BF6364621E8617600D78D3C /* BaseViewController.swift in Sources */,
+				2BB1220421F6EFB70057B207 /* CenterSymmetryLine.swift in Sources */,
 				2BF6363D21E85F9700D78D3C /* CenterSymmetryViewController.swift in Sources */,
 				2BF6364921E877FD00D78D3C /* DrawLine.swift in Sources */,
+				2BB1220621F6F00F0057B207 /* SymmetryRotationLine.swift in Sources */,
 				2B7DD0ED21F05E1D0044A5EA /* MPHeader.swift in Sources */,
+				2BB1220221F6EB580057B207 /* LeftAndRightSymmetryLine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
