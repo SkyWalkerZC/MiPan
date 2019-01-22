@@ -31,6 +31,47 @@ class DrawLine: UIView {
         backgroundColor = paperColor
     }
     
+    override func draw(_ rect: CGRect) {
+        let context:CGContext = UIGraphicsGetCurrentContext()!
+        context.setLineCap(CGLineCap.round)
+        context.setLineJoin(CGLineJoin.round)
+        
+        
+        if allLineInfos.count > 0 {
+            // 循环取出画的每一条线
+            for index in 0...allLineInfos.count-1 {
+                let line:DrawLineInfo = allLineInfos[index]
+                context.beginPath()
+                let startPoint = line.linePoints[0]
+                context.move(to: startPoint)
+                
+                // 线上的每一点
+                if line.linePoints.count > 1 {
+                    for index in 1...line.linePoints.count-1 {
+                        let endPoint = line.linePoints[index]
+                        context.addLine(to: endPoint)
+                    }
+                } else {
+                    context.addLine(to: startPoint)
+                }
+                
+                context.setStrokeColor(line.lineColor.cgColor)
+                context.setLineWidth(line.lineWidth + 1)
+                context.strokePath()
+            }
+        }
+    }
+    
+    func anyTouchInTouchSet(touches:Set<UITouch>) -> UITouch {
+        if touches.count > 0 {
+            for touch in touches {
+                return touch;
+            }
+        }
+        assert(false, "集合不能为空啊")
+        return UITouch()
+    }
+    
     func cleanAllDraw() {
         if allLineInfos.count > 0 {
             allLineInfos.removeAll()
