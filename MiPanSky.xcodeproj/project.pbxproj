@@ -28,6 +28,8 @@
 		2BF6365021E89C7300D78D3C /* FreedomModuleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BF6364F21E89C7300D78D3C /* FreedomModuleViewController.xib */; };
 		B1313C3E21F56E380080D178 /* LysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1313C3D21F56E380080D178 /* LysViewController.swift */; };
 		B1313C4021F59ED90080D178 /* LysDemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1313C3F21F59ED90080D178 /* LysDemoCell.swift */; };
+		B1313C4221F5C43C0080D178 /* meetIng.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1313C4121F5C43C0080D178 /* meetIng.jpg */; };
+		B1313C4421F5C8A60080D178 /* MeetStatisticsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1313C4321F5C8A60080D178 /* MeetStatisticsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		2BF6364F21E89C7300D78D3C /* FreedomModuleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreedomModuleViewController.xib; sourceTree = "<group>"; };
 		B1313C3D21F56E380080D178 /* LysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LysViewController.swift; sourceTree = "<group>"; };
 		B1313C3F21F59ED90080D178 /* LysDemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LysDemoCell.swift; sourceTree = "<group>"; };
+		B1313C4121F5C43C0080D178 /* meetIng.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meetIng.jpg; sourceTree = "<group>"; };
+		B1313C4321F5C8A60080D178 /* MeetStatisticsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetStatisticsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,7 @@
 			children = (
 				2BF6361D21E8408000D78D3C /* ViewController.swift */,
 				B1313C3D21F56E380080D178 /* LysViewController.swift */,
+				B1313C4321F5C8A60080D178 /* MeetStatisticsController.swift */,
 				2BF6363321E85F6100D78D3C /* FreedomModuleViewController.swift */,
 				2BF6363721E85F8400D78D3C /* LeftAndRightSymmetryViewController.swift */,
 				2BF6363B21E85F9700D78D3C /* CenterSymmetryViewController.swift */,
@@ -134,6 +139,7 @@
 		2BF6364321E85FB700D78D3C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				B1313C4121F5C43C0080D178 /* meetIng.jpg */,
 				2BF6364F21E89C7300D78D3C /* FreedomModuleViewController.xib */,
 				2BF6363821E85F8400D78D3C /* LeftAndRightSymmetryViewController.xib */,
 				2BF6363C21E85F9700D78D3C /* CenterSymmetryViewController.xib */,
@@ -210,6 +216,7 @@
 			files = (
 				2BF6363A21E85F8400D78D3C /* LeftAndRightSymmetryViewController.xib in Resources */,
 				2BF6363221E85C6400D78D3C /* LaunchScreen.storyboard in Resources */,
+				B1313C4221F5C43C0080D178 /* meetIng.jpg in Resources */,
 				2BF6363121E85C5B00D78D3C /* Info.plist in Resources */,
 				2BF6364221E85FB100D78D3C /* SymmetryRotationViewController.xib in Resources */,
 				2BF6362321E8408200D78D3C /* Assets.xcassets in Resources */,
@@ -233,6 +240,7 @@
 				2BF6361E21E8408000D78D3C /* ViewController.swift in Sources */,
 				2BF6364C21E8789A00D78D3C /* DrawLineInfo.swift in Sources */,
 				2BF6363521E85F6100D78D3C /* FreedomModuleViewController.swift in Sources */,
+				B1313C4421F5C8A60080D178 /* MeetStatisticsController.swift in Sources */,
 				B1313C4021F59ED90080D178 /* LysDemoCell.swift in Sources */,
 				2BF6361C21E8408000D78D3C /* AppDelegate.swift in Sources */,
 				2BF6364621E8617600D78D3C /* BaseViewController.swift in Sources */,

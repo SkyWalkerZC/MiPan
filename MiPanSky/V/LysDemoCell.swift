@@ -11,6 +11,8 @@ import UIKit
 class LysDemoCell: UITableViewCell {
 
     var textLab:UILabel!
+    var iconImg:UIImageView!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,9 +21,18 @@ class LysDemoCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        textLab = UILabel(frame: CGRect(x:10,y:10,width: 200,height:40))
-        textLab.font = UIFont.boldSystemFont(ofSize: 17)
-        textLab.textColor = UIColor.red
+        iconImg = UIImageView(frame: CGRect(x:20,y:10,width: kScreenWidth - 40,height:140))
+        iconImg.backgroundColor = UIColor.green
+        iconImg.layer.cornerRadius = 4
+        iconImg.layer.masksToBounds = true
+        iconImg.layer.shouldRasterize = true
+        iconImg.layer.rasterizationScale = UIScreen.main.scale
+        iconImg.image = UIImage.init(named: "meetIng.jpg")
+        self.contentView.addSubview(iconImg)
+        
+        textLab = UILabel(frame: CGRect(x:20,y:160,width: 200,height:20))
+        textLab.font = UIFont.boldSystemFont(ofSize: 15)
+        textLab.textColor = UIColor.black
         self.contentView.addSubview(textLab)
     }
 
@@ -30,8 +41,8 @@ class LysDemoCell: UITableViewCell {
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
+        super.setSelected(false, animated: animated)
+
     }
 
 }
