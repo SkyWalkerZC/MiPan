@@ -22,10 +22,6 @@ class FreedomDrawLine: DrawLine {
         setNeedsDisplay()
     }
     
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-    }
-    
     private func drawTouchesBegin(width:CGFloat, color:UIColor, beginPoint:CGPoint) {
         let line = DrawLineInfo()
         line.lineWidth = width
