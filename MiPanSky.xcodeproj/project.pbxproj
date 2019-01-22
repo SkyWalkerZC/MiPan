@@ -30,6 +30,8 @@
 		B1313C4021F59ED90080D178 /* LysDemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1313C3F21F59ED90080D178 /* LysDemoCell.swift */; };
 		B1313C4221F5C43C0080D178 /* meetIng.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1313C4121F5C43C0080D178 /* meetIng.jpg */; };
 		B1313C4421F5C8A60080D178 /* MeetStatisticsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1313C4321F5C8A60080D178 /* MeetStatisticsController.swift */; };
+		B1313C4621F6AA7A0080D178 /* MeetManagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1313C4521F6AA7A0080D178 /* MeetManagerController.swift */; };
+		B1313C4821F6E5D70080D178 /* MeeetManagerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1313C4721F6E5D70080D178 /* MeeetManagerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,8 @@
 		B1313C3F21F59ED90080D178 /* LysDemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LysDemoCell.swift; sourceTree = "<group>"; };
 		B1313C4121F5C43C0080D178 /* meetIng.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meetIng.jpg; sourceTree = "<group>"; };
 		B1313C4321F5C8A60080D178 /* MeetStatisticsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetStatisticsController.swift; sourceTree = "<group>"; };
+		B1313C4521F6AA7A0080D178 /* MeetManagerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetManagerController.swift; sourceTree = "<group>"; };
+		B1313C4721F6E5D70080D178 /* MeeetManagerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeeetManagerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 				2BF6364821E877FD00D78D3C /* DrawLine.swift */,
 				2BF6364D21E886FD00D78D3C /* FreedomDrawLine.swift */,
 				B1313C3F21F59ED90080D178 /* LysDemoCell.swift */,
+				B1313C4721F6E5D70080D178 /* MeeetManagerCell.swift */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 				2BF6361D21E8408000D78D3C /* ViewController.swift */,
 				B1313C3D21F56E380080D178 /* LysViewController.swift */,
 				B1313C4321F5C8A60080D178 /* MeetStatisticsController.swift */,
+				B1313C4521F6AA7A0080D178 /* MeetManagerController.swift */,
 				2BF6363321E85F6100D78D3C /* FreedomModuleViewController.swift */,
 				2BF6363721E85F8400D78D3C /* LeftAndRightSymmetryViewController.swift */,
 				2BF6363B21E85F9700D78D3C /* CenterSymmetryViewController.swift */,
@@ -245,8 +251,10 @@
 				2BF6361C21E8408000D78D3C /* AppDelegate.swift in Sources */,
 				2BF6364621E8617600D78D3C /* BaseViewController.swift in Sources */,
 				2BF6363D21E85F9700D78D3C /* CenterSymmetryViewController.swift in Sources */,
+				B1313C4821F6E5D70080D178 /* MeeetManagerCell.swift in Sources */,
 				2BF6364921E877FD00D78D3C /* DrawLine.swift in Sources */,
 				2B7DD0ED21F05E1D0044A5EA /* MPHeader.swift in Sources */,
+				B1313C4621F6AA7A0080D178 /* MeetManagerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

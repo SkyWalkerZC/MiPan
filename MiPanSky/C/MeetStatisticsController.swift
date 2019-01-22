@@ -18,6 +18,14 @@ class MeetStatisticsController: UIViewController {
         self.view.backgroundColor = UIColor.white
         self.title = "会议统计"
         initSegMent()
+        
+        let dic = [1:"one",2:"two",3:"three"]
+        for item in dic {
+            print("key=\(item.key),value=\(item.value)")
+        }
+        
+        let array = (2,"4",5.9,"45")
+        print(array)
     }
     
     func initSegMent()  {
@@ -35,14 +43,24 @@ class MeetStatisticsController: UIViewController {
         baseScroll?.isPagingEnabled = true
         baseScroll?.contentSize = CGSize(width: kScreenWidth*2, height: kScreenHeight - 120)
         self.view.addSubview(baseScroll)
-                
+        
+        let leftView = UIView(frame: CGRect(x: 10, y: 10, width: 100, height: 90))
+        leftView.backgroundColor = UIColor.red
+        baseScroll.addSubview(leftView)
+        
+        AddController()
+    }
+    
+    func AddController() {
+        let meetVc = MeetManagerController()
+        meetVc.view.frame = CGRect(x: kScreenWidth, y: 0, width: kScreenWidth, height: kScreenHeight - 120)
+        self.addChild(meetVc)
+        baseScroll.addSubview(meetVc.view)
+        
     }
     
     @objc func segMentAction(seg:UISegmentedControl)  {
-        if seg.selectedSegmentIndex == 0 {
-            baseScroll?.setContentOffset(CGPoint(x:kScreenWidth, y: 0), animated: true)
-        }else{
-            baseScroll?.setContentOffset(CGPoint(x:kScreenWidth*2, y: 0), animated: true)
-        }
+        let indexs =  CGFloat(seg.selectedSegmentIndex)
+        baseScroll?.setContentOffset(CGPoint.init(x: kScreenWidth*indexs, y: 0), animated: true)
     }
 }
