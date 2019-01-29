@@ -39,14 +39,12 @@ class MeetStatisticsController: UIViewController {
         self.view.addSubview(segMent)
         
         baseScroll = UIScrollView(frame: CGRect(x: 0, y: 120, width: kScreenWidth, height: kScreenHeight - 120))
-        baseScroll?.backgroundColor = UIColor.lightGray
+        baseScroll?.backgroundColor = UIColor.init(red: 241/255, green: 241/255, blue: 241/255, alpha: 1)
+        baseScroll.isScrollEnabled = false
         baseScroll?.isPagingEnabled = true
+        baseScroll.showsHorizontalScrollIndicator = false
         baseScroll?.contentSize = CGSize(width: kScreenWidth*2, height: kScreenHeight - 120)
         self.view.addSubview(baseScroll)
-        
-        let leftView = UIView(frame: CGRect(x: 10, y: 10, width: 100, height: 90))
-        leftView.backgroundColor = UIColor.red
-        baseScroll.addSubview(leftView)
         
         AddController()
     }
@@ -57,6 +55,10 @@ class MeetStatisticsController: UIViewController {
         self.addChild(meetVc)
         baseScroll.addSubview(meetVc.view)
         
+        let statisticalVc = StatisticalController()
+        statisticalVc.view.frame = CGRect(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight - 120)
+        self.addChild(statisticalVc)
+        baseScroll.addSubview(statisticalVc.view)
     }
     
     @objc func segMentAction(seg:UISegmentedControl)  {

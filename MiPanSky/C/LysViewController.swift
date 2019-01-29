@@ -16,17 +16,33 @@ class LysViewController: UIViewController,UITableViewDelegate,UITableViewDataSou
         self.view.backgroundColor = .white;
         self.title = "会议列表"
         
-        var array = [Int](repeating: 9, count: 5)
-        array.append(3)
-        print("----\(array)");
-        
-        var someInts:[Int] = [10, 20, 30]
-        print(someInts)
-        someInts.remove(at: 0)
-        print(someInts)
         creatTab()
+        
+        class studentMarks {
+            var mark = 300
+        }
+        let marks = studentMarks()
+        print("成绩为\(marks.mark)")
+        
+        
+        class Person{
+            var residence : Residence?
+            
+        }
+        class Residence{
+            var numberOfRooms = 1
+        }
+        let john = Person()
+        
+        if let roomCount = john.residence?.numberOfRooms{
+            print("g房间号\(roomCount)")
+        }else{
+            print("不能查看")
+        }
+        let list = (1,"23",3.9,"123")
+        print(list)
+        
     }
-    
     
     func creatTab() {
         let tableView = UITableView(frame: view.bounds, style: .plain)

@@ -24,12 +24,17 @@ class MeeetManagerCell: UITableViewCell {
         lineView.backgroundColor = UIColor.init(red: 241/255.0, green: 241/255.0, blue: 241/255.0, alpha: 1.0)
         self.contentView.addSubview(lineView)
         
-        iconImg = UIImageView(frame: CGRect(x: 15, y: 18, width: 20, height: 18))
+        iconImg = UIImageView(frame: CGRect(x: 15, y: 19, width: 20, height: 18))
+        iconImg.contentMode = .scaleAspectFit
         self.contentView.addSubview(iconImg)
         
         titleLabel = UILabel(frame: CGRect(x: 45, y: 0, width: 120, height: 58))
         titleLabel.font = UIFont.systemFont(ofSize: 15)
         self.contentView.addSubview(titleLabel)
+        
+        let jumpimg = UIImageView(frame: CGRect(x: kScreenWidth - 30, y: 23, width: 7, height: 11))
+        jumpimg.image = UIImage.init(named: "meeting_nextSetp")
+        self.contentView.addSubview(jumpimg)
     }
     
     
