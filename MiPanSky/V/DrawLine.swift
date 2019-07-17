@@ -10,7 +10,9 @@ import UIKit
 
 class DrawLine: UIView {
     
-    // 画布基类
+    /*
+     画布视图基类
+     */
     
     var allLineInfos = [DrawLineInfo]()  // 画出来的所有的线合集
     var currentPaintColor : UIColor      // 当前划线颜色
@@ -46,6 +48,8 @@ class DrawLine: UIView {
     }
     
     // TODO：存储划线点位
+    
+    // 取出点击位置的一点
     func anyTouchInTouchSet(touches:Set<UITouch>) -> UITouch {
         if touches.count > 0 {
             for touch in touches {

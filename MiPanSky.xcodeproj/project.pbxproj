@@ -26,6 +26,7 @@
 		2BF6364C21E8789A00D78D3C /* DrawLineInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6364B21E8789A00D78D3C /* DrawLineInfo.swift */; };
 		2BF6364E21E886FD00D78D3C /* FreedomDrawLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6364D21E886FD00D78D3C /* FreedomDrawLine.swift */; };
 		2BF6365021E89C7300D78D3C /* FreedomModuleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BF6364F21E89C7300D78D3C /* FreedomModuleViewController.xib */; };
+		70D4642122DEB4FD009326EB /* ChooseColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4642022DEB4FD009326EB /* ChooseColorView.swift */; };
 		70F4A7CF2248A96A00D15F85 /* LeftAndRightDrawLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F4A7CE2248A96A00D15F85 /* LeftAndRightDrawLine.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		2BF6364B21E8789A00D78D3C /* DrawLineInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawLineInfo.swift; sourceTree = "<group>"; };
 		2BF6364D21E886FD00D78D3C /* FreedomDrawLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreedomDrawLine.swift; sourceTree = "<group>"; };
 		2BF6364F21E89C7300D78D3C /* FreedomModuleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreedomModuleViewController.xib; sourceTree = "<group>"; };
+		70D4642022DEB4FD009326EB /* ChooseColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseColorView.swift; sourceTree = "<group>"; };
 		70F4A7CE2248A96A00D15F85 /* LeftAndRightDrawLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAndRightDrawLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 				2BF6364821E877FD00D78D3C /* DrawLine.swift */,
 				2BF6364D21E886FD00D78D3C /* FreedomDrawLine.swift */,
 				70F4A7CE2248A96A00D15F85 /* LeftAndRightDrawLine.swift */,
+				70D4642022DEB4FD009326EB /* ChooseColorView.swift */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				2BF6364C21E8789A00D78D3C /* DrawLineInfo.swift in Sources */,
 				2BF6363521E85F6100D78D3C /* FreedomModuleViewController.swift in Sources */,
 				2BF6361C21E8408000D78D3C /* AppDelegate.swift in Sources */,
+				70D4642122DEB4FD009326EB /* ChooseColorView.swift in Sources */,
 				70F4A7CF2248A96A00D15F85 /* LeftAndRightDrawLine.swift in Sources */,
 				2BF6364621E8617600D78D3C /* BaseViewController.swift in Sources */,
 				2BF6363D21E85F9700D78D3C /* CenterSymmetryViewController.swift in Sources */,

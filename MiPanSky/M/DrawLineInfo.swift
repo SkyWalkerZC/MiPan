@@ -9,6 +9,10 @@
 import UIKit
 
 class DrawLineInfo: NSObject {
+    /*
+     线
+     */
+    
 public
     var linePoints = [CGPoint]()
     var lineColor : UIColor

@@ -30,6 +30,10 @@ class FreedomModuleViewController: BaseViewController {
     override func cleanAll() {
         freedomView?.cleanAllDraw()
     }
+    
+    override func setLineColor(color: UIColor) {
+        freedomView?.currentPaintColor = color
+    }
 
 
     /*
