@@ -26,6 +26,7 @@
 		2BF6364C21E8789A00D78D3C /* DrawLineInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6364B21E8789A00D78D3C /* DrawLineInfo.swift */; };
 		2BF6364E21E886FD00D78D3C /* FreedomDrawLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF6364D21E886FD00D78D3C /* FreedomDrawLine.swift */; };
 		2BF6365021E89C7300D78D3C /* FreedomModuleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BF6364F21E89C7300D78D3C /* FreedomModuleViewController.xib */; };
+		70F4A7CF2248A96A00D15F85 /* LeftAndRightDrawLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F4A7CE2248A96A00D15F85 /* LeftAndRightDrawLine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		2BF6364B21E8789A00D78D3C /* DrawLineInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawLineInfo.swift; sourceTree = "<group>"; };
 		2BF6364D21E886FD00D78D3C /* FreedomDrawLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreedomDrawLine.swift; sourceTree = "<group>"; };
 		2BF6364F21E89C7300D78D3C /* FreedomModuleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreedomModuleViewController.xib; sourceTree = "<group>"; };
+		70F4A7CE2248A96A00D15F85 /* LeftAndRightDrawLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAndRightDrawLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			children = (
 				2BF6364821E877FD00D78D3C /* DrawLine.swift */,
 				2BF6364D21E886FD00D78D3C /* FreedomDrawLine.swift */,
+				70F4A7CE2248A96A00D15F85 /* LeftAndRightDrawLine.swift */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				2BF6364C21E8789A00D78D3C /* DrawLineInfo.swift in Sources */,
 				2BF6363521E85F6100D78D3C /* FreedomModuleViewController.swift in Sources */,
 				2BF6361C21E8408000D78D3C /* AppDelegate.swift in Sources */,
+				70F4A7CF2248A96A00D15F85 /* LeftAndRightDrawLine.swift in Sources */,
 				2BF6364621E8617600D78D3C /* BaseViewController.swift in Sources */,
 				2BF6363D21E85F9700D78D3C /* CenterSymmetryViewController.swift in Sources */,
 				2BF6364921E877FD00D78D3C /* DrawLine.swift in Sources */,
@@ -377,14 +381,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8F3KT864KL;
+				DEVELOPMENT_TEAM = 7CNJ3RKH38;
 				INFOPLIST_FILE = MiPanSky/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = zc.MiPanSky;
+				PRODUCT_BUNDLE_IDENTIFIER = zc.ice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -396,14 +400,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8F3KT864KL;
+				DEVELOPMENT_TEAM = 7CNJ3RKH38;
 				INFOPLIST_FILE = MiPanSky/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = zc.MiPanSky;
+				PRODUCT_BUNDLE_IDENTIFIER = zc.ice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

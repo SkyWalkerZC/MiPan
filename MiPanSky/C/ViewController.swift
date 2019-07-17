@@ -9,7 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+/*
+     主页面  选择模式
+     */
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

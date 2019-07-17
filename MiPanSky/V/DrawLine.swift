@@ -45,7 +45,29 @@ class DrawLine: UIView {
         }
     }
     
+    // TODO：存储划线点位
+    func anyTouchInTouchSet(touches:Set<UITouch>) -> UITouch {
+        if touches.count > 0 {
+            for touch in touches {
+                return touch;
+            }
+        }
+        assert(false, "集合不能为空啊")
+        return UITouch.init()
+    }
     
+    func drawTouchesBegin(width:CGFloat, color:UIColor, beginPoint:CGPoint) {
+        let line = DrawLineInfo()
+        line.lineWidth = width
+        line.lineColor = color
+        line.linePoints.append(beginPoint)
+        allLineInfos.append(line)
+    }
+    
+    func drawTouchesMovedWithPoint(movePoint:CGPoint) {
+        let lastLine = allLineInfos.last
+        lastLine?.linePoints.append(movePoint)
+    }
     
     
     /*

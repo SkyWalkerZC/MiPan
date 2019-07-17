@@ -43,14 +43,14 @@ class FreedomDrawLine: DrawLine {
     
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let touch = anyTouchInTouchSet(touches: touches)
-        drawTouchesBegin(width:currentPaintWidth, color: currentPaintColor, beginPoint: touch.location(in: self))
+        let touch = self.anyTouchInTouchSet(touches: touches)
+        self.drawTouchesBegin(width:currentPaintWidth, color: currentPaintColor, beginPoint: touch.location(in: self))
         setNeedsDisplay()
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let moveTouch = anyTouchInTouchSet(touches: touches)
-        drawTouchesMovedWithPoint(movePoint: moveTouch.location(in: self))
+        let moveTouch = self.anyTouchInTouchSet(touches: touches)
+        self.drawTouchesMovedWithPoint(movePoint: moveTouch.location(in: self))
         setNeedsDisplay()
     }
     
@@ -58,27 +58,6 @@ class FreedomDrawLine: DrawLine {
         
     }
     
-    private func anyTouchInTouchSet(touches:Set<UITouch>) -> UITouch {
-        if touches.count > 0 {
-            for touch in touches {
-                return touch;
-            }
-        }
-        assert(false, "集合不能为空啊")
-        return UITouch.init()
-    }
-    
-    private func drawTouchesBegin(width:CGFloat, color:UIColor, beginPoint:CGPoint) {
-        let line = DrawLineInfo()
-        line.lineWidth = width
-        line.lineColor = color
-        line.linePoints.append(beginPoint)
-        allLineInfos.append(line)
-    }
-    
-    private func drawTouchesMovedWithPoint(movePoint:CGPoint) {
-        let lastLine = allLineInfos.last
-        lastLine?.linePoints.append(movePoint)
-    }
+
 
 }
