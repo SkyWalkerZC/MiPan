@@ -13,6 +13,7 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
+        print("zhangjie")
     }
     
     func setUI() {
